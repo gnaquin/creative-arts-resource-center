@@ -1,0 +1,267 @@
+<!-- <app-header></app-header> -->
+<ion-header [translucent]="false">
+  <ion-toolbar id="mobileHeader">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+      <img
+        slot="end"
+        id="headerLogoTwo"
+        src="../../assets/icon/icon.png"/>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="page">
+    <div class="cover">
+      <img id="big_pic" src="../../assets/pictures/logo_location_mari_v2.jpg" />
+      <img id="small_pic" src="../../assets/pictures/logo_small.jpg" />
+      <h1>
+        WORSHIP
+        <br />
+        INTERCESSION
+        <br />
+        EVANGELISM
+        <br />
+        INNER HEALING
+      </h1>
+    </div>
+
+    <div class="big_container">
+      <div class="container">
+        <div class="innerContainer">
+          <ion-card class="calCard" color="light">
+            <ion-card-header color="light">
+              <ion-icon name="calendar-outline"></ion-icon>
+              <ion-card-title color="light">Upcoming Events</ion-card-title>
+            </ion-card-header>
+            <ion-card-content color="light">
+              <ion-list color="light">
+                <ion-item color="light">
+                  <ion-label
+                    >Art Community <br /><i>Nov 23rd 7PM - 9PM</i></ion-label
+                  >
+                  <ion-button
+                    [routerLink]="['/calendar']"
+                    expand="block"
+                    color="success"
+                  >
+                    <div class="serviceButnText">
+                      <span> MORE DATES </span>
+                    </div>
+                  </ion-button>
+                </ion-item>
+                <ion-item color="light">
+                  <ion-label
+                    >Creative Worship <br /><i
+                      >Nov 27th 10AM - 11AM</i
+                    ></ion-label
+                  >
+                  <ion-button [routerLink]="['/calendar']" color="success">
+                    <div class="serviceButnText">
+                      <span> MORE DATES </span>
+                    </div>
+                  </ion-button>
+                </ion-item>
+                <ion-item color="light">
+                  <ion-label
+                    >Kingdom Writers <br />
+                    Association <br /><i>Dec 3rd 7PM - 9PM</i></ion-label
+                  >
+                  <ion-button
+                    (click)="contactButton()"
+                    expand="block"
+                    color="success"
+                  >
+                    <div class="serviceButnText">
+                      <span> REGISTER </span>
+                    </div>
+                  </ion-button>
+                </ion-item>
+                <ion-item color="light">
+                  <ion-label
+                    >Kingdom Dance <br />
+                    and Movement <br /><i>Dec 15th 7PM - 9PM</i></ion-label
+                  >
+                  <ion-button expand="block" color="success">
+                    <div class="serviceButnText">
+                      <span> REGISTER </span>
+                    </div>
+                  </ion-button>
+                </ion-item>
+                <ion-item color="light">
+                  <ion-label
+                    >Art Community <br /><i>Dec 20th 7PM - 9PM</i></ion-label
+                  >
+                  <ion-button
+                    [routerLink]="['/calendar']"
+                    expand="block"
+                    color="success"
+                  >
+                    <div class="serviceButnText">
+                      <span> MORE DATES </span>
+                    </div>
+                  </ion-button>
+                </ion-item>
+                <ion-item color="light">
+                  <ion-label
+                    >Workshop <br /><i>Dec 23rd 7PM - 9PM</i></ion-label
+                  >
+                  <ion-button expand="block" color="success">
+                    <div class="serviceButnText">
+                      <span> REGISTER </span>
+                    </div>
+                  </ion-button>
+                </ion-item>
+                <ion-item color="light">
+                  <ion-label
+                    >Workshop <br /><i>Dec 29th 7PM - 9PM</i></ion-label
+                  >
+                  <ion-button expand="block" color="success">
+                    <div class="serviceButnText">
+                      <span> REGISTER </span>
+                    </div>
+                  </ion-button>
+                </ion-item>
+                <ion-item color="light">
+                  <ion-label>Workshop <br /><i>Jan 3rd 7PM - 9PM</i></ion-label>
+                  <ion-button expand="block" color="success">
+                    <div class="serviceButnText">
+                      <span> REGISTER </span>
+                    </div>
+                  </ion-button>
+                </ion-item>
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+          <div class="who">
+            <h1>Who We Are</h1>
+
+            <p>We provide a safe place to create.</p>
+
+            <p>A community of creative believers.</p>
+
+            <p>Creative groups specifically geared towards your passion.</p>
+
+            <p>
+              Classes to grow you in supernatural creativity to lead, heal,
+              prophesy, worship, intercede and evangelize.
+            </p>
+
+            <p>
+              Books, E-courses, Materials, and Workshops to take you to the next
+              level spiritually and skillfully.
+            </p>
+
+            <p>
+              We provide a place of freedom and healing and courses to help you
+              walk through loss, trauma, and pain.
+            </p>
+          </div>
+        </div>
+
+        <div class="service">
+          <h1>Our Services</h1>
+
+          <div class="serviceContainer">
+            <div class="services">
+              <h3>Art Community</h3>
+              <p>
+                We go after supernatural creativity through art! You will learn
+                how to co-create with God, prophecy through art, overcome fears,
+                find inner healing, and get encouragement and accountability.
+                Happens every other Tuesday!
+              </p>
+              <!-- <ion-button expand="block" color="success">
+                <div class="serviceButnText">
+                  <span> See Dates </span>
+                </div>
+              </ion-button> -->
+            </div>
+
+            <div class="services">
+              <h3>Kingdom Writers Association</h3>
+              <p>
+                You will gain a community and family of writers who love to
+                encourage one another and provide a safe place to share your
+                writing. Learn how God wants to use your writing gift to touch
+                others, to prophesy, heal, and even bring you through healing.
+              </p>
+              <!-- <ion-button expand="block" color="success">
+                <div class="serviceButnText">
+                  <span> See Dates </span>
+                </div>
+              </ion-button> -->
+            </div>
+
+            <div class="services">
+              <h3>Saturday Morning Creative Worship</h3>
+              <p>
+                Two Saturdays out of the month we gather all the creatives to
+                worship and pray. As well as do group activations, mini
+                teachings, and follow the Holy Spirit's lead to create,
+                encourage one another, and have fun!
+              </p>
+              <!-- <ion-button expand="block" color="success">
+                <div class="serviceButnText">
+                  <span> See Dates </span>
+                </div>
+              </ion-button> -->
+            </div>
+
+            <div class="services">
+              <h3>Kingdom Dance and Movement</h3>
+              <p>
+                David danced before the Lord and so shall we! Come learn more
+                about how God redeems our bodies, break off body shame, and
+                learn redeemed expressions. You'll learn how to use flags, dance
+                with freedom, and how to connect to God through movement.
+              </p>
+              <!-- <ion-button expand="block" color="success">
+                <div class="serviceButnText">
+                  <span> See Dates </span>
+                </div>
+              </ion-button> -->
+            </div>
+
+            <div class="services">
+              <img src="../../assets/pictures/stock_dance.jpg" />
+            </div>
+
+            <div class="services">
+              <h3>Workshops</h3>
+              <p>
+                God can move supernaturally through creativity. Learn how to
+                prophecy, heal, evangelize, worship, intercede, and encounter
+                the Lord at a weekend workshop- hosted by us or bring us to you!
+              </p>
+              <!-- <ion-button expand="block" color="success">
+                <div class="serviceButnText">
+                  <span> See Dates </span>
+                </div>
+              </ion-button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map">
+      <div class="locationContainer">
+        <h3>250 West Broadway,<br />Waukesha, WI 53186</h3>
+      </div>
+
+      <div class="contactContainer">
+        <h1>Get in Touch</h1>
+
+        <ion-button (click)="contactButton()" color="secondary">
+          <div class="serviceButnText">
+            <span> Contact Form </span>
+          </div>
+        </ion-button>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</ion-content>
