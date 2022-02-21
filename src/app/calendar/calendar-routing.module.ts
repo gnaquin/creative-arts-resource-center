@@ -5,7 +5,7 @@ import { CalendarPage } from './calendar.page';
 
 const routes: Routes = [
   {
-    path: '/calendar',
+    path: '',
     component: CalendarPage
   }
 ];
