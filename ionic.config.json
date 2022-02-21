@@ -1,0 +1,7 @@
+{
+  "name": "creative-arts-resource-center",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
