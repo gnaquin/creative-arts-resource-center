@@ -1,16 +1,20 @@
-<header>
-  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-  <nav>
-    <ul>
-      <li><a class="two" (click)="contactButton()">Contact</a></li>
-      <li><a class="two" [routerLink]="['/calendar']">Calendar</a></li>
-      <li><a class="two" (click)="donateButton()">Donate</a></li>
-      <li><a class="two" (click)="registerButton()">Sign Up</a></li>
-      <li><img id="headerLogo" src="../../assets/icon/icon.png" /></li>
-    </ul>
-  </nav>
-  <img id="headerLogoTwo" src="../../assets/icon/icon.png" />
-  <label for="nav-toggle" class="nav-toggle-label">
-    <span></span>
-  </label>
-</header>
+<ion-header [translucent]="false">
+  <ion-toolbar id="mobileHeader">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <nav>
+      <ul>
+        <li><a [routerLink]="['/']">Home</a></li>
+        <li><a (click)="contactButton()">Contact</a></li>
+        <li><a [routerLink]="['/calendar']">Calendar</a></li>
+        <li><a>Donate</a></li>
+        <li><a>Sign Up</a></li>
+      </ul>
+    </nav>
+      <img
+        slot="end"
+        id="headerLogo"
+        src="../../assets/icon/icon.png"/>
+  </ion-toolbar>
+</ion-header>

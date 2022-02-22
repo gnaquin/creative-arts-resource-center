@@ -1,5 +1,18 @@
 ion-menu ion-content {
-  --background: var(--ion-item-background, var(--ion-background-color, #fff));
+  --background: #36454f
+}
+
+ion-menu {
+  opacity: (98.7%);
+}
+
+ion-list {
+  background: #36454f
+}
+
+ion-item {
+  --background: #36454f;
+  color: #fffff0
 }
 
 ion-menu.md ion-content {
@@ -98,3 +111,8 @@ ion-note {
   color: var(--ion-color-medium-shade);
 }
 
+@media screen and (min-width: 991px) {
+  ion-menu {
+    display: none
+  }
+}

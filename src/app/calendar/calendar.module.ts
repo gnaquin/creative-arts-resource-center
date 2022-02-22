@@ -8,11 +8,16 @@ import { CalendarPageRoutingModule } from './calendar-routing.module';
 
 import { CalendarPage } from './calendar.page';
 
+import { HeaderModule } from '../components/header/header.component.module';
+import { FooterModule } from '../components/footer/footer.component.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    HeaderModule,
+    FooterModule,
     CalendarPageRoutingModule
   ],
   declarations: [CalendarPage]
